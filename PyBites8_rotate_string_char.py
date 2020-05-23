@@ -11,9 +11,9 @@ def test():
     tests = [('hello', 3, 'llohe'),
             ('hello', -3, 'lohel')]
     for word, displacement, answer in tests:
-        print(answer)
         assert rotate(word, displacement) == answer
 
 test()
+
 # a = 'hello'
 # print(a[])
