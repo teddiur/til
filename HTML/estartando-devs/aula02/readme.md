@@ -1,0 +1,2 @@
+A intenção desse projeto é documentar meus estudos no curso estartando devs.
+As páginas referentes as aulas e tecnologias que ainda não tivemos ainda não estão implementadas, bem como o sistema de login.
