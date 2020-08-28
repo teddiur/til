@@ -4,108 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 02 - Estartando Devs</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body background="./img/bg-yellow.jpg">
-    <h1>Aula 02 - Introdução a HTML</h1>
-
-    <label for="conclusao">Conclusão do curso:</label>
-    <progress id="conclusao" value="2" max="16">1/8</progress>
-
-    <section class="introduction">
-        <h2>Tópicos</h2>
-        <ol>
-            <li>História da web</li>
-            <li>Introdução HTTP</li>
-            <li>Introdução HTML</li>
-        </ol>
-    </section>
+    <header>
+        <h1>Aula 02 - Introdução a HTML</h1>
     
-    <section class="resumo">
-        <h2>Resumo</h2>
-        <h3>HTTP</h3>
-        <p>
-            HTTP é um protocolo de comunicação na internet, que se estabelece um par requisição-resposta.
-            Os principais métodos requisições são:
-        </p>
-        
-        <table>
-            <tr>
-                <th>Método</th>
-                <th>Descrição</th>
-            </tr>
-            <tr>
-                <td>GET</td>
-                <td>Requisita informação do servidor.</td>
-            </tr>
-            <tr>
-                <td>POST</td>
-                <td>Envia informação pro servidor.</td>
-            </tr>
-            <tr>
-                <td>DELETE</td>
-                <td>... deleta.</td>
-            </tr>
-            <tr>
-                <td>PUT</td>
-                <td>Edita informação já no servidor.</td>
-            </tr>
-        </table>
+        <label for="conclusao">Conclusão do curso:</label>
+        <progress id="conclusao" value="2" max="16">1/8</progress>
+    </header>
 
-        <p>Existe um padrão de respostas que pode ser acessado <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#:~:text=Embora%20o%20padr%C3%A3o%20HTTP%20especifique,para%20obter%20a%20resposta%20solicitada.&text=Este%20c%C3%B3digo%20de%20resposta%20est%C3%A1%20reservado%20para%20uso%20futuro.&text=Semelhante%20ao%20401%20porem%20%C3%A9,seja%20feita%20por%20um%20proxy.">aqui</a>. As respostas são divididas em faixas, como a seguir:</p>
+    <main class="content">
+        <section class="overview">
+            <h2>Tópicos</h2>
+            <ol>
+                <li>História da web</li>
+                <li>Introdução HTTP</li>
+                <li>Introdução HTML</li>
+            </ol>
+        </section>
         
-        <table>
-            <tr>
-                <th>Tipo de resposta</th>
-                <th>Faixa de código</th>
-            </tr>
-            <tr>
-                <td>Respostas de informação</td>
-                <td>100-199</td>
-            </tr>
-            <tr>
-                <td>Respsotas de sucesso</td>
-                <td>200-299</td>
-            </tr>
-            <tr>
-                <td>Redirecionamentos</td>
-                <td>300-399</td>
-            </tr>
-            <tr>
-                <td>Erros do cliente</td>
-                <td>400-499</td>
-            </tr>
-            <tr>
-                <td>Erros do servidor</td>
-                <td>500-599</td>
-            </tr>
-        </table>
-
-        <h3>HTML</h3>
-        <p>
-            <a href="html.html">HTML</a> foi criada em 1991 por <a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a> no CERN
-            <small><s>sim, onde fica o colisor de partículas</s></small>
-        </p>
-        <img src="https://pplware.sapo.pt/wp-content/uploads/2018/09/tim-berners-lee-720x490.jpg" alt="Tim_Berners-Lee" width="300px">
-        <p>
-            É uma linguagem de marcação <s>não de programação</s>. Ela é lida pelo navegador que, então renderiza as páginas como as vemos.
-        </p>
-    </section>
+        <section class="abstract">
+            <h2>Resumo</h2>
+            <h3>HTTP</h3>
+            <p>
+                HTTP é um protocolo de comunicação na internet, que se estabelece um par requisição-resposta.
+                Os principais métodos requisições são:
+            </p>
+            
+            <table>
+                <tr>
+                    <th>Método</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>Requisita informação do servidor.</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>Envia informação pro servidor.</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>... deleta.</td>
+                </tr>
+                <tr>
+                    <td>PUT</td>
+                    <td>Edita informação já no servidor.</td>
+                </tr>
+            </table>
     
-    <section class="atividades">
-        <h2>Atividades</h2>
-        <ol>
-            <li>Criar pelo menos 04 páginas, linkadas entre si,
-                utilizando apenas HTML.
-            </li>
-        </ol>
-        <a>Entregar <a href="https://classroom.google.com/u/0/c/MTQ3NjU0NTAyNzc1">aqui</a></p>
-        <hr>
-    </section>
+            <p>Existe um padrão de respostas que pode ser acessado <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#:~:text=Embora%20o%20padr%C3%A3o%20HTTP%20especifique,para%20obter%20a%20resposta%20solicitada.&text=Este%20c%C3%B3digo%20de%20resposta%20est%C3%A1%20reservado%20para%20uso%20futuro.&text=Semelhante%20ao%20401%20porem%20%C3%A9,seja%20feita%20por%20um%20proxy.">aqui</a>. As respostas são divididas em faixas, como a seguir:</p>
+            
+            <table>
+                <tr>
+                    <th>Tipo de resposta</th>
+                    <th>Faixa de código</th>
+                </tr>
+                <tr>
+                    <td>Respostas de informação</td>
+                    <td>100-199</td>
+                </tr>
+                <tr>
+                    <td>Respsotas de sucesso</td>
+                    <td>200-299</td>
+                </tr>
+                <tr>
+                    <td>Redirecionamentos</td>
+                    <td>300-399</td>
+                </tr>
+                <tr>
+                    <td>Erros do cliente</td>
+                    <td>400-499</td>
+                </tr>
+                <tr>
+                    <td>Erros do servidor</td>
+                    <td>500-599</td>
+                </tr>
+            </table>
+    
+            <h3>HTML</h3>
+            <p>
+                <a href="html.html">HTML</a> foi criada em 1991 por <a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a> no CERN
+                <small><s>sim, onde fica o colisor de partículas</s></small>
+            </p>
+            <img src="https://pplware.sapo.pt/wp-content/uploads/2018/09/tim-berners-lee-720x490.jpg" alt="Tim_Berners-Lee" width="300px">
+            <p>
+                É uma linguagem de marcação <s>não de programação</s>. Ela é lida pelo navegador que, então renderiza as páginas como as vemos.
+            </p>
+        </section>
+        
+        <section class="atividades">
+            <h2>Atividades</h2>
+            <ol>
+                <li>Criar pelo menos 04 páginas, linkadas entre si,
+                    utilizando apenas HTML.
+                </li>
+            </ol>
+            <a>Entregar <a href="https://classroom.google.com/u/0/c/MTQ3NjU0NTAyNzc1">aqui</a></p>
+            <hr>
+        </section>
+    </main>
 
     <footer>
-    <div class="navegar">
+    <section class="nav">
         <p><a href="aula01.html">Aula anterior</a> <a href="index.html">Inicio</a>    <a href="aula03.html">Próxima aula</a></p>
-    </div>
+    </section>
     </footer>
 </body background="https://pplware.sapo.pt/wp-content/uploads/2018/09/tim-berners-lee-720x490.jpg">
 </html>
