@@ -1,0 +1,24 @@
+tags semânticas e tipos de uso de CSS
+
+div e span são elementos "containers". Não tem valor semântico, mas ajuda pro css.
+nav, header, section, aside, footer são tags semanticas utilizadas pelos mecânismos de buscas. Utilizar essas tags corretamente é SEO (Search Engine Optimization)
+nav: links para navegação no site
+header: frequentemente contem h1, é uma parte introdutória do site
+section: seções genéricas que separam conteúdos
+main: parte principal, miolo do site
+article:
+figure: envelope de imagens, pode conter legendas com figcaption
+aside: informação a mais sobre o <article>, <section>, etc
+footer: rodapé
+
+CSS cascading style sheets
+
+sintaxe
+seletor {
+    propriedade: valor;
+}
+da pra usae css EXTERNO <head><link rel="stylesheet" href="styles.css"></head>
+da pra usae css INTERNO <head><style>seletor {propriedade: valor;}</style></head>
+da pra usar css INLINE (style="propriedade:valor;")
+
+documentação mozilla de css

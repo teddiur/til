@@ -1,0 +1,10 @@
+seletores css e  principais propriedades
+
+maneiras básicas de selecionar elementos
+1-tag 2-class 3-id 4-atributo
+1 nav {propriedade: valor;}
+2 .nome-da-classe {propriedade: valor;}
+3 #algum-id {propriedade: valor;} 
+é pra ser unico
+4 [atributo=valor] {propriedade: valor;}
+da pra usar = (exato) ~= |= (exato ou seguido de -) ^= (começa com o valor) $= (termina com o valor) *= (contem o valor)
