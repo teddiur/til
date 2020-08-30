@@ -3,55 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Estartando Devs</title>
+    <link rel="stylesheet" href="template.css">
+    <style>
+        div.who-we-are {
+            display: grid;
+            grid-template-columns: 400px 400px;
+        }
+
+    </style>
+
 </head>
 <body>
-    <!-- upper part of page, where you log in -->
     <header>
-        <img src="./img/estartandodevs.png" alt="logotipo" width="200px" height="150px">
-        <h1>Estartando Devs</h1>
-        <form action="" class="login">
-            <input type="text" name="username" placeholder="Digite seu usuário">
-            <input type="text" name="password" placeholder="Digite sua senha">
-            <input type="submit">   
-        </form>
+        <img class="logo" src="./img/estartandodevs.png" alt="estartando-devs">
+        <nav>
+            <button class="sign-in">Entrar</button>
+        </nav>
     </header>
-    
-    <!-- description of the project and links to content pages -->
-    <main>
-        <section class="introduction">
-            <h2>Lorem ipsum</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aspernatur, enim dicta assumenda placeat qui repudiandae nisi cupiditate sunt eos autem ducimus, repellat nam cum doloremque voluptate soluta rerum officia.</p>
-        </section>
-        
-        <aside>
-            <nav>
-                <h2>Aulas</h2>
-                <ul>
-                    <a href="aula01.html"><li>Aula 01 - Apresentação do curso</li></a>
-                    <a href="aula02.html"><li>Aula 02 - Introdução ao HTML</li></a>
-                    <a href="aula03.html"><li>Aula 03 - Tags semânticas e tipos de uso de CSS</li></a>
-                    <a href=""><li>Aula 04</li></a>
-                    <a href=""><li>Aula 05</li></a>
-                    <a href=""><li>Aula 06</li></a>
-                    <a href=""><li>Aula 07</li></a>
-                    <a href=""><li>Aula 08</li></a>
-                    <a href=""><li>Aula 09</li></a>
-                    <a href=""><li>Aula 10</li></a>
-                    <a href=""><li>Aula 11</li></a>
-                </ul>
-                <h2>Tecnologias</h2>
-                <ul>
-                    <a href="html.html"><li>HTML</li></a>
-                    <a href="css.html"><li>CSS</li></a>
-                    <a href="javascript.html"><li>JavaScript</li></a>
-                </ul>
-            </nav>
-        </aside>
-    </main>
 
-    <!-- still thinking what to put here -->
+    <main>
+        <section class="who-we-are">
+            <h2>O que ensinamos</h2>
+            <p>
+                Acreditamos no poder de transformação social através da Tecnologia da Informação. Por isso, oferecemos uma formação objetiva e focada nas exigências do mercado de TI. Os dois cursos incluem ainda conhecimentos em métodos de gestão ágil de projetos utilizados no mercado para o desenvolvimento de trabalhos em equipe, além de assessoria no Linkedin e direcionamento de carreira.
+            </p>
+            <div class="who-we-are">
+                <div>
+                    <h2>Desenvolvimento Web</h2>
+                    <p>
+                        Sabe aquele aplicativo que você usa todos os dias? Aqui você vai aprender o que está por trás dele. Entramos no mundo do densenvolvimento de aplicações mobile e web, utilizando JavaScript com React (tecnologia criada pelo Facebook).
+                    </p>
+                </div>
+                
+                <div>
+                    <img src="./img/estartandodevs.png" alt="">
+                </div>
+
+                <div>
+                    <img src="./img/estartandodevs.png" alt="">
+                </div>
+                
+                <div>
+                    </p>
+                    <h2>Design UI/UX</h2>
+                    <p>
+                        Nessa formação você vai conhecer os princípios e fundamentos de design, aprender a criar protótipos de sites e aplicativos com base na experiência do usuário, além de partcipar da criação de produtos digitais.
+                    </p>
+                </div>
+            </div>
+            <p>Faça login para ter acesso a todo o nosso conteúdo.</p>
+        </section>
+
+        </aside>
+
+        </form>
+    </main>
     <footer>
 
     </footer>
