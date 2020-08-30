@@ -143,7 +143,6 @@ section .login-text.dark-mode {
 
 section button.dark-mode {
     margin-top: 20px;
-    display: block;
     width: 230px;
     height: 50px;
     background-image: linear-gradient(to top, rgba(255,255,255,1%) 0px, rgba(3,36,6,100%) 5px, rgba(33,66,36,80%) 40px, rgba(255,255,255,0%) 50px);
