@@ -4,113 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 02 - Estartando Devs</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="template.css">
 </head>
-<body background="./img/bg-yellow.jpg">
+<body class="dark-mode">
     <header>
-        <h1>Aula 02 - Introdução a HTML</h1>
-    
-        <label for="conclusao">Conclusão do curso:</label>
-        <progress id="conclusao" value="2" max="16">1/8</progress>
+        <img class="logo" src="./img/estartandodevs.png" alt="estartando-devs">
+        <div class="progress-bar">
+            <h1>Aula 01 - Apresentação do curso</h1>
+            <label for="conclusao">Conclusão do curso:</label>
+            <progress id="conclusao" value="2" max="16">2/16</progress>
+        </div>
     </header>
-
     <main class="content">
-        <section class="overview">
+        <section class="content dark-mode">
             <h2>Tópicos</h2>
-            <ol>
+            <ul class="review">
                 <li>História da web</li>
                 <li>Introdução HTTP</li>
                 <li>Introdução HTML</li>
-            </ol>
-        </section>
-        
-        <section class="abstract">
+            </ul>
+            
+            
             <h2>Resumo</h2>
             <h3>HTTP</h3>
             <p>
                 HTTP é um protocolo de comunicação na internet, que se estabelece um par requisição-resposta.
                 Os principais métodos requisições são:
             </p>
+            <div class="two-columns data-table">
+                <p class="column-head">Método</p>
+                <p class="column-head">Descrição</p>
+                <p>GET</p>
+                <p>Requisita informação do servidor.</p>
+                <p>POST</p>
+                <p>Envia informação pro servidor.</p>
+                <p>DELETE</p>
+                <p>... deleta.</p>
+                <p>PUT</p>
+                <p>Edita informação já no servidor.</p>
+            </div>            
+
             
-            <table>
-                <tr>
-                    <th>Método</th>
-                    <th>Descrição</th>
-                </tr>
-                <tr>
-                    <td>GET</td>
-                    <td>Requisita informação do servidor.</td>
-                </tr>
-                <tr>
-                    <td>POST</td>
-                    <td>Envia informação pro servidor.</td>
-                </tr>
-                <tr>
-                    <td>DELETE</td>
-                    <td>... deleta.</td>
-                </tr>
-                <tr>
-                    <td>PUT</td>
-                    <td>Edita informação já no servidor.</td>
-                </tr>
-            </table>
-    
             <p>Existe um padrão de respostas que pode ser acessado <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status#:~:text=Embora%20o%20padr%C3%A3o%20HTTP%20especifique,para%20obter%20a%20resposta%20solicitada.&text=Este%20c%C3%B3digo%20de%20resposta%20est%C3%A1%20reservado%20para%20uso%20futuro.&text=Semelhante%20ao%20401%20porem%20%C3%A9,seja%20feita%20por%20um%20proxy.">aqui</a>. As respostas são divididas em faixas, como a seguir:</p>
+            <div class="two-columns data-table">
+                <p class="column-head">Tipo de resposta</p>
+                <p class="column-head">Faixa de código</p>
+                <p>Respostas de informação</p>
+                <p>100-199</p>
+                <p>Respsotas de sucesso</p>
+                <p>200-299</p>
+                <p>Redirecionamentos</p>
+                <p>300-399</p>
+                <p>Erros do cliente</p>
+                <p>400-499</p>
+                <p>Erros do servidor</p>
+                <p>500-599</p>
+            </div>
             
-            <table>
-                <tr>
-                    <th>Tipo de resposta</th>
-                    <th>Faixa de código</th>
-                </tr>
-                <tr>
-                    <td>Respostas de informação</td>
-                    <td>100-199</td>
-                </tr>
-                <tr>
-                    <td>Respsotas de sucesso</td>
-                    <td>200-299</td>
-                </tr>
-                <tr>
-                    <td>Redirecionamentos</td>
-                    <td>300-399</td>
-                </tr>
-                <tr>
-                    <td>Erros do cliente</td>
-                    <td>400-499</td>
-                </tr>
-                <tr>
-                    <td>Erros do servidor</td>
-                    <td>500-599</td>
-                </tr>
-            </table>
-    
             <h3>HTML</h3>
             <p>
                 <a href="html.html">HTML</a> foi criada em 1991 por <a href="https://pt.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a> no CERN
                 <small><s>sim, onde fica o colisor de partículas</s></small>
             </p>
-            <img src="https://pplware.sapo.pt/wp-content/uploads/2018/09/tim-berners-lee-720x490.jpg" alt="Tim_Berners-Lee" width="300px">
+            <figure>
+                <img src="https://pplware.sapo.pt/wp-content/uploads/2018/09/tim-berners-lee-720x490.jpg" alt="Tim_Berners-Lee" width="300px">
+            <figcaption style="text-align: center; font-size: 10px;">That's <strong>the</strong> guy</figcaption>
+            </figure>
             <p>
                 É uma linguagem de marcação <s>não de programação</s>. Ela é lida pelo navegador que, então renderiza as páginas como as vemos.
             </p>
+            <footer>
+                <hr>
+                <h2>Atividades</h2>
+                <ul>
+                    <li>Criar pelo menos 04 páginas, linkadas entre si,
+                        utilizando apenas HTML.
+                    </li>
+                </ul>
+                <a>Entregar <a href="https://classroom.google.com/u/0/c/MTQ3NjU0NTAyNzc1">aqui</a></p>
+            </footer>
         </section>
-        
-        <section class="atividades">
-            <h2>Atividades</h2>
-            <ol>
-                <li>Criar pelo menos 04 páginas, linkadas entre si,
-                    utilizando apenas HTML.
-                </li>
-            </ol>
-            <a>Entregar <a href="https://classroom.google.com/u/0/c/MTQ3NjU0NTAyNzc1">aqui</a></p>
-            <hr>
-        </section>
+        <aside class="right dark-mode">
+            <nav class="navigation-tab dark-mode">
+                <div class="first-on-tab"></div>
+                <h2>Aulas</h2>
+                <ul>
+                    <a href="aula01.html"><li>Aula 01 - Apresentação do curso</li></a>
+                    <a href="aula02.html"><li>Aula 02 - Introdução ao HTML</li></a>
+                    <a href="aula03.html"><li>Aula 03 - Tags semânticas e tipos de uso de CSS</li></a>
+                    <a href=""><li>Aula 04</li></a>
+                    <a href=""><li>Aula 05</li></a>
+                    <a href=""><li>Aula 06</li></a>
+                    <a href=""><li>Aula 07</li></a>
+                    <a href=""><li>Aula 08</li></a>
+                    <a href=""><li>Aula 09</li></a>
+                    <a href=""><li>Aula 10</li></a>
+                    <a href=""><li>Aula 11</li></a>
+                </ul>
+                <div class="last-on-tab"></div>
+            </nav>
+            <nav class="navigation-tab dark-mode relative-tab">
+                <div class="first-on-tab"></div>
+                <!-- <h2>Aulas</h2> -->
+                <ul>
+                    <a class="relative-tab" href="aula01.html"><li>Aula anterior</li></a>
+                    <a href="content-nav.html" class="relative-tab"><li>Inicio</li></a>
+                    <a class="relative-tab" href="aula03.html"><li>Próxima aula</li></a>
+                </ul>
+            </nav>
+        </aside>
     </main>
-
-    <footer>
-    <section class="nav">
-        <p><a href="aula01.html">Aula anterior</a> <a href="index.html">Inicio</a>    <a href="aula03.html">Próxima aula</a></p>
-    </section>
-    </footer>
-</body background="https://pplware.sapo.pt/wp-content/uploads/2018/09/tim-berners-lee-720x490.jpg">
 </html>

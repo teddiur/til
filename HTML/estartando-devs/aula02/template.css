@@ -65,7 +65,7 @@ section {
     border-radius: 10px;
     min-height: 300px;
 }
-section h2 {
+section h2, section h3 {
     margin-top: 15px;
     text-shadow: 3px 1px 2px black;
 }
@@ -78,6 +78,11 @@ section:first-child, aside:first-child {
 }
 section p {
     margin-bottom: 2px;
+    text-indent: 15px;
+}
+.review li {
+    list-style-type: circle;
+    margin-left: 25px;
 }
 section img {
     display: block;
@@ -99,7 +104,6 @@ section .login {
     background-color: rgba(24,64,28,60%);
     box-shadow: 1px 1px 2px 2px black;
 }
-
 input:-webkit-autofill,input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:selected, textarea:-webkit-autofill,textarea:-webkit-autofill:hover,textarea:-webkit-autofill:focus,select:-webkit-autofill,select:-webkit-autofill:hover,select:-webkit-autofill:focus  {
   /* border: 1px solid green; */
   -webkit-text-fill-color: rgba(241,218,191,90%);
@@ -123,21 +127,25 @@ div.login-container {
     text-align: center;
     font-size: 20px;
 }
-
 input.login-text::placeholder {
     color: rgba(241,218,191,90%);
 }
-
 input.login-text[type="text"]:focus {
     border: 0;
     outline: none;
 }
-
 div.two-columns {
     display: grid;
     grid-template-columns: 400px 400px;
     margin-top: 20px;
     column-gap: 80px;
+}
+.column-head {
+    font-size: 20px;
+}
+.data-table {
+    border: 1px solid black;
+    margin-bottom: 10px;
 }
 .two-columns h2 {
     text-align: center;
@@ -152,9 +160,13 @@ a li {
 a:link > li, a:active > li, a:visited > li, a:hover > li{
     text-decoration: none;
 }
-/* a:link li, a:active, a:visited, a:hover{
-    text-decoration: none;
-} */
+section footer, section footer h2, section footer li {
+    text-align: center;
+}
+section footer hr {
+    border-top: 1px solid white;
+    margin: 10px 0 10px 0;
+}
 .dark-mode a li {
     background-color: #18401Cc3;
 }
