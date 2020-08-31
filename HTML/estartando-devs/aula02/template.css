@@ -12,7 +12,7 @@ body {
 /* header */
 header {
     display: grid;
-    grid-template-columns: 250px 1200px;
+    grid-template-columns: 250px 1000px;
     --header-height: 100px;
     height: var(--header-height);
     width: 100%;
@@ -41,7 +41,7 @@ header nav {
 }
 
 header button {
-    left: 1100px;
+    left: 800px;
     color: black;
     padding: 10px;
     border-radius: 10%;
@@ -64,9 +64,13 @@ section {
     background-color: #F1DABF;
     border-radius: 10px;
     min-height: 300px;
+    box-shadow: 0.5px 0.5px 2px 1px white;
+}
+section, .navigation-tab {
+    padding: 15px;
 }
 section h2, section h3 {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     text-shadow: 3px 1px 2px black;
 }
 section * {
@@ -104,6 +108,7 @@ section .login {
     background-color: rgba(24,64,28,60%);
     box-shadow: 1px 1px 2px 2px black;
 }
+/* TODO ISSO AINDA NÃO FUNCIONA. PQ? */
 input:-webkit-autofill,input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:selected, textarea:-webkit-autofill,textarea:-webkit-autofill:hover,textarea:-webkit-autofill:focus,select:-webkit-autofill,select:-webkit-autofill:hover,select:-webkit-autofill:focus  {
   /* border: 1px solid green; */
   -webkit-text-fill-color: rgba(241,218,191,90%);
@@ -111,11 +116,9 @@ input:-webkit-autofill,input:-webkit-autofill:hover, input:-webkit-autofill:focu
   background-color: transparent;
   /* transition: background-color 5000s ease-in-out 0s; */
 }
-
 div.login-container {
     margin-top: 45px;
 }
-
 .login-text {
     position: relative;
     top: 35px;
@@ -154,8 +157,8 @@ ul, ol, li {
     list-style: none;
 }
 a li {
-    margin: 0 0 0 10px;
     padding: 5px 0;
+    border: 1px solid #000500;
 }
 a:link > li, a:active > li, a:visited > li, a:hover > li{
     text-decoration: none;
@@ -234,13 +237,16 @@ aside.right {
     background-color: #F1DABF;    
     border-radius: 10px;
     min-height: 100px;
+    box-shadow: 0.5px 0.5px 2px 1px white;
 }
-.first-on-tab, .last-on-tab {
-    height: 15px;
-    width: 0;
+.navigation-tab.dark-mode h2 {
+    color: #cfcfcf;
+    text-align: center;
+    text-shadow: 1px 1px green;
 }
 a.relative-tab {
     font-size: 18px;
+    text-align: center;
 }
 .navigation-tab.dark-mode {
     background-color: rgba(3,36,6,95%);

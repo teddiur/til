@@ -3,49 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>>Aula 03 - Estartando Devs</title>
-    <link rel="stylesheet" href="styles.css">
-    </head>
-<body background="./img/bg-yellow.jpg">
-    <!-- upper part of page, there's a progress bar -->
+    <title>Aula 03 - Estartando Devs</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="multipleimages.css">
+</head>
+<body class="dark-mode">
     <header>
-        <h1>Aula 03 - Tags semânticas e tipos de uso de CSS</h1>
-        <label for="conclusao" id="bla">Conclusão do curso:</label>
-        <progress id="conclusao" value="3" max="16">3/16</progress>
+        <img class="logo" src="./img/estartandodevs.png" alt="estartando-devs">
+        <div class="progress-bar">
+            <h1>Aula 03 - Tags semânticas e tipos de uso de CSS</h1>
+            <label for="conclusao">Conclusão do curso:</label>
+            <progress id="conclusao" value="3" max="34">Módulo1</progress>
+        </div>
     </header>
-
-    <!-- content -->
-    <main class="content">
-        <section class="overview">
-            <h2>Tópicos</h2>
-            <ol>
-                <li>Tags Semânticas</li>
-                <li>Sintaxe CSS</li>
-                <li>Seletores CSS</li>
-            </ol>
-        </section>
-
-        <section class="abstract">
-            <h2>Resumo</h2>
-            <h3>Tags semanticas HTML</h3>
-            <p>
-                HTML tem tags com significado como &lt;nav> ou &lt;header> que, além de servir como caixas (assim como &lt;div>) estruturam o código.
-            </p>
-            <p>
-                Utiliza-las é uma boa prática para otimizar o site para o mecanismo de busca (Search Engine Optimization - SEO)
-            </p>
+    
+    <main>
+        <section class="content dark-mode"> 
+            <div class="introducao">
+                <h2>Tópicos</h2>
+                <p>
+                    <ul>
+                        <li>Tags Semânticas</li>
+                        <li>Sintaxe CSS</li>
+                        <li>Seletores CSS</li
+                    </ul>
+                </p>
+            </div>
             
-            <h3>CSS</h3>
-             
+            <div class="resumo dark-mode">
+                <h2>Resumo</h2>
+                <h3>Tags semanticas HTML</h3>
+                <p>
+                    HTML tem tags com significado como &lt;nav> ou &lt;header> que, além de servir como caixas (assim como &lt;div>) estruturam o código. Utiliza-las é uma boa prática para otimizar o site para o mecanismo de busca (Search Engine Optimization - SEO)
+                </p>
+                
+                <h3>CSS</h3>
+            </div>
+            
+            <footer>
+                <hr>
+                <h2>Atividades</h2>
+                <ol>
+                    <li>Pesquisa de 5 vagas com seus respectivos salários e requisitos</li>
+                </ol>
+                <a>Entregue <a href="https://classroom.google.com/u/0/c/MTQ3NjU0NTAyNzc1">aqui</a></p>
+                <hr>
+            </footer>
         </section>
 
+        <aside class="right dark-mode">
+            <nav class="navigation-tab dark-mode">
+                <h2>Aulas</h2>
+                <ul>
+                    <a href="aula01.html"><li>Aula 01 - Apresentação do curso</li></a>
+                    <a href="aula02.html"><li>Aula 02 - Introdução ao HTML</li></a>
+                    <a href="aula03.html"><li>Aula 03 - Tags semânticas e tipos de uso de CSS</li></a>
+                    <a href=""><li>Aula 04</li></a>
+                    <a href=""><li>Aula 05</li></a>
+                    <a href=""><li>Aula 06</li></a>
+                    <a href=""><li>Aula 07</li></a>
+                    <a href=""><li>Aula 08</li></a>
+                    <a href=""><li>Aula 09</li></a>
+                    <a href=""><li>Aula 10</li></a>
+                    <a href=""><li>Aula 11</li></a>
+                </ul>
+            </nav>
+            <nav class="navigation-tab dark-mode relative-tab">
+                <!-- <h2>Aulas</h2> -->
+                <ul>
+                    <a class="relative-tab" href="aula02.html"><li>Aula anterior</li></a>
+                    <a class="relative-tab" href="content-nav.html"><li>Inicio</li></a>
+                    <a class="relative-tab" href="aula04.html"><li>Próxima aula</li></a>
+                </ul>
+            </nav>
+        </aside>
     </main>
-
-    <!-- navigation section -->
-    <footer>
-        <nav>
-            <p><a href="aula02.html">Aula anterior</a> <a href="index.html">Inicio</a>    <a href="aula04.html">Próxima aula</a></p>
-        </nav>
-    </footer>
 </body>
 </html>
