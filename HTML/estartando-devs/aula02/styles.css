@@ -89,10 +89,22 @@ section img {
     position: relative;
     margin: auto;
 }
-section .code {
+section .code, section .code-block {
     font-family: Courier, "Lucida Console", monospace;
     background-color: #011203;
     color: white;
+}
+section .code-block {
+    display: inline-block;
+}
+.indent-0 {
+    text-indent: 0px;
+}
+.indent-1 {
+    text-indent: 15px;
+}
+.indent-2 {
+    text-indent: 30px;
 }
 section .login {
     --login-width: 400px;
@@ -143,7 +155,7 @@ div.two-columns {
     display: grid;
     grid-template-columns: 400px 400px;
     padding: 20px 40px 0 0;
-    text-align: right;
+    text-align: left;
 }
 .column-head {
     font-size: 20px;
@@ -198,6 +210,7 @@ aside.right {
 a.relative-tab {
     font-size: 18px;
     text-align: center;
+    vertical-align: middle;
 }
 
 @keyframes bold-a {
