@@ -1,0 +1,22 @@
+body {
+    background-color: #B7CECE;
+    margin: auto;
+    width: 50%;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+header {
+    text-align: center;
+}
+
+main.content {
+    border: 3px solid #cc4000;
+    box-shadow: 3px 3px 2px 2px brown;
+}
+
+footer {
+    text-align: center;
+}
