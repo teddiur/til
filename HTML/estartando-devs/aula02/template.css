@@ -85,7 +85,7 @@ section:first-child, aside:first-child {
 }
 section p {
     margin-bottom: 2px;
-    text-indent: 15px;
+    text-indent: 25px;
 }
 .review li {
     list-style-type: circle;
