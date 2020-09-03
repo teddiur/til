@@ -1,0 +1,9 @@
+git
+é um sistema de versionamento, ajuda com a rastreabilidade de um projeto (quem fez o que? qual era a versão desse código na semana passada?)
+faremos as coisas por terminal (powershell ou cmd)
+(w/l)
+cls/clear - limpa a tela
+cd - muda o diretorio
+ls/dir - lista o diretório
+new-item/touch - cria um arquivo
+mkdir - cria um diretório
